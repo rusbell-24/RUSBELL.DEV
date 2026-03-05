@@ -1,73 +1,75 @@
-# React + TypeScript + Vite
+# 🌐 Portfolio - Rusbell Ruiz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene el código fuente de mi **portafolio web personal**, donde presento información profesional sobre mi perfil, habilidades técnicas y algunos de los proyectos que he desarrollado.
 
-Currently, two official plugins are available:
+El objetivo de este proyecto es servir como un espacio centralizado para mostrar mi experiencia como desarrollador y facilitar a reclutadores o colaboradores conocer mi trabajo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Puedes ver el portafolio en línea aquí:
 
-## Expanding the ESLint configuration
+🔗 **[Ver portafolio](https://tu-url-aqui.com)**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 👨‍💻 Sobre el proyecto
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+El portafolio está construido como una **Single Page Application (SPA)** y cuenta con varias secciones que permiten navegar de forma fluida por la información más relevante de mi perfil profesional.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Secciones principales
+
+- **Inicio** – Presentación breve y enlaces a redes profesionales.
+- **Sobre mí** – Información sobre mi formación y enfoque profesional.
+- **Portafolio** – Proyectos desarrollados con enlaces a código o demostraciones.
+- **Habilidades** – Tecnologías y herramientas que utilizo.
+- **Hoja de vida** – Acceso directo a mi CV.
+
+La navegación entre secciones se realiza mediante **scroll suave**, permitiendo una experiencia de usuario más fluida.
+
+---
+
+## 🛠 Tecnologías utilizadas
+
+Este proyecto fue desarrollado utilizando:
+
+- **React**
+- **TypeScript**
+- **Vite**
+- **CSS Modules**
+- **React Icons**
+
+Además, se aplicaron buenas prácticas como:
+
+- Componentización de la interfaz
+- Uso de tipado estático con TypeScript
+- Separación de datos y componentes
+- Diseño responsive
+
+---
+
+## ⚙️ Cómo ejecutar el proyecto localmente
+
+Si deseas explorar o modificar el proyecto, puedes ejecutarlo en tu entorno local siguiendo estos pasos.
+
+### 1. Clonar el repositorio
+
+Abre una terminal y ejecuta:
+
+```bash
+git https://github.com/rusbell-24/RUSBELL.DEV.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+posteriormente,
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd RUSBELL.DEV
+npm install
+npm run dev
 ```
+
+con esto ya podras abrir la aplicación en:
+`http://localhost:5173`
+
+
