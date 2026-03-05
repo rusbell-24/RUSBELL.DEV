@@ -1,0 +1,21 @@
+.socialMedia {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.socialLink {
+    border: 1px solid var(--text-color);
+    border-radius: 50px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.socialLink:hover {
+    background-color: var(--secondary-color);
+}

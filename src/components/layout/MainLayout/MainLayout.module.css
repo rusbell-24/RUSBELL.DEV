@@ -1,0 +1,30 @@
+.layout {
+    background:linear-gradient(to top,#1e2326cc,#1e2326);
+    min-height: 100vh;
+}
+
+.main {
+    padding-top: 60px;
+}
+
+section {
+    padding: 6rem 2rem;
+}
+
+.profileCardSection {
+    background:linear-gradient(to top,#505557cc,#2b3135);
+    min-height: calc(100vh - 60px);
+}
+
+.aboutSection {
+    background: var(--primary-color);
+}
+.portfolioSection {
+    background: var(--primary-color-light);
+}
+.skillsSection {
+    background: var(--primary-color);
+}
+.curriculumSection {
+    background: var(--primary-color-light);
+}

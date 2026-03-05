@@ -1,0 +1,19 @@
+.container {
+    color: var(--text-color);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: var(--font-family-title);
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.projectList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-around;
+}

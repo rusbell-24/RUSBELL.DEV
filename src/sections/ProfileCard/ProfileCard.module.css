@@ -1,0 +1,35 @@
+.card {
+    padding: 2rem;
+    background-color: var(--primary-color);
+    max-width: 350px;
+    margin: 6rem auto 0;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    font-family: 'Righteous', sans-serif;
+    color: var(--text-color);
+    backdrop-filter: blur(10px);
+}
+
+.image img{
+    border: 10px solid var(--secondary-color);
+    display: block;
+    width: 250px;
+    height: 280px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.info {
+    margin-top: 2rem;
+}
+
+.name {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.role {
+    font-size: 1rem;
+}

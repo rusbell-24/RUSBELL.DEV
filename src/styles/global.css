@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* colors */
+    --primary-color: #1e2326;
+    --primary-color-light: #252a2e;
+    --secondary-color: #1cb698;
+    --text-color: #ffffff;
+
+    /* fonts */
+    --font-family: 'Work Sans', sans-serif;
+    --font-family-title: 'Righteous', sans-serif;
+
+    /* layout */
+    --max-width: 1200px;
+    --section-padding: 6rem 2rem;
+}

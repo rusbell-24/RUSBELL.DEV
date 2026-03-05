@@ -1,0 +1,89 @@
+.container {
+    color: var(--text-color);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: var(--font-family-title);
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.description {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    text-align: justify;
+}
+
+.infoSection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: start;
+}
+.personalInfo {
+    flex: 1 1 300px;
+}
+.interests {
+    flex: 1 1 300px;
+}
+
+.subtitle {
+    font-family: var(--font-family-title);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.personalInfo ul {
+    list-style: none;
+}
+
+.personalInfo li {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+
+.personalInfo strong {
+    color: var(--secondary-color);
+    display: inline-block;
+    width: 130px;
+}
+
+.interestList {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: start;
+}
+
+.interestContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: var(--primary-color-light);
+    font-family: var(--font-family);
+    font-size: 1rem;
+    gap: 10px;
+}
+
+.interestContent:hover {
+    background-color: var(--secondary-color);
+}
+
+.interestIcon{
+    width: 30px;
+    height: 30px;
+}

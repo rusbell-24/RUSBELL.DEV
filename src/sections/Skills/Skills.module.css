@@ -1,0 +1,56 @@
+.container {
+    color: var(--text-color);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: var(--font-family-title);
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.skillsSection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.technicalSkills {
+    flex: 1 1 300px;;
+}
+
+.softSkills {
+    flex: 1 1 300px;
+}
+
+.subtitle {
+    font-family: var(--font-family-title);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.skillList {
+    list-style: none;
+    padding: 0;
+}
+
+.skillItem {
+    font-family: var(--font-family);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    margin-left: 0.8rem;
+}
+
+.icon{
+    color: var(--secondary-color);
+    margin-right: 0.5rem;
+    width: 25px;
+    height: 25px;
+}
