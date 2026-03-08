@@ -2,6 +2,7 @@ import type { Project } from "../types/projects";
 import todosApp from '../assets/images/todosapp.png';
 import galleryApp from '../assets/images/galleryapp.png';
 import contactList from '../assets/images/contactlist.png';
+import extmanager from '../assets/images/extmanager.png';
 
 export const  projects: Project[] =  [
     {
@@ -28,4 +29,12 @@ export const  projects: Project[] =  [
         codeLink: "https://github.com/rusbell-24/Agenda-Contactos_REACT-PWA",
         pageLink: "https://agenda-contactos-react-pwa-rusbell.netlify.app/"
     },
+    {
+        id: 4,
+        title: "ExtManager",
+        image: extmanager,
+        description: "Aplicación de gestión de extensiones construida con React y TypeScript. Permite activar, desactivar, eliminar y filtrar extensiones con soporte de tema claro y oscuro.",
+        codeLink: "https://github.com/rusbell-24/ExtManager",
+        pageLink: "https://rusbell-24.github.io/ExtManager/"
+    }
 ]
