@@ -1,35 +1,88 @@
 .card {
-    padding: 2rem;
-    background-color: var(--primary-color);
-    max-width: 350px;
-    margin: 6rem auto 0;
-    border-radius: 40px;
-    text-align: center;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-    font-family: 'Righteous', sans-serif;
-    color: var(--text-color);
-    backdrop-filter: blur(10px);
+  padding: 2rem;
+  background-color: var(--primary-color);
+  max-width: 350px;
+  margin: 6rem auto 0;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  font-family: "Righteous", sans-serif;
+  color: var(--text-color);
+  backdrop-filter: blur(10px);
 }
 
-.image img{
-    border: 10px solid var(--secondary-color);
-    display: block;
-    width: 250px;
-    height: 280px;
-    object-fit: cover;
-    margin: auto;
-    border-radius: 50%;
+.image img {
+  border: 10px solid var(--secondary-color);
+  display: block;
+  width: 250px;
+  height: 280px;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 50%;
 }
 
 .info {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .name {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .role {
-    font-size: 1rem;
+  font-size: 1rem;
+}
+
+/* responsive: tablet */
+@media (max-width: 1024px) {
+  .card {
+    padding: 1.8rem;
+    max-width: 320px;
+    margin-top: 4.5rem;
+    border-radius: 32px;
+  }
+
+  .image img {
+    width: 220px;
+    height: 250px;
+    border-width: 8px;
+  }
+
+  .name {
+    font-size: 1.8rem;
+  }
+
+  .role {
+    font-size: 0.95rem;
+  }
+}
+
+/* responsive: mobile */
+@media (max-width: 640px) {
+  .card {
+    padding: 1.2rem;
+    max-width: 90%;
+    margin: 3rem auto 0;
+    border-radius: 24px;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+  }
+
+  .image img {
+    width: 180px;
+    height: 200px;
+    border-width: 6px;
+  }
+
+  .info {
+    margin-top: 1.4rem;
+  }
+
+  .name {
+    font-size: 1.6rem;
+  }
+
+  .role {
+    font-size: 0.9rem;
+  }
 }

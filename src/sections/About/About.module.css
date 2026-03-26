@@ -1,89 +1,184 @@
 .container {
-    color: var(--text-color);
-    max-width: 1100px;
-    margin: 0 auto;
+  color: var(--text-color);
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .title {
-    font-family: var(--font-family-title);
-    font-size: 3rem;
-    text-align: center;
-    padding-bottom: 40px;
+  font-family: var(--font-family-title);
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 40px;
 }
 
 .description {
-    font-family: var(--font-family);
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 3rem;
-    text-align: justify;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  text-align: justify;
 }
 
 .infoSection {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: start;
 }
 .personalInfo {
-    flex: 1 1 300px;
+  flex: 1 1 300px;
 }
 .interests {
-    flex: 1 1 300px;
+  flex: 1 1 300px;
 }
 
 .subtitle {
-    font-family: var(--font-family-title);
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+  font-family: var(--font-family-title);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .personalInfo ul {
-    list-style: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
 }
 
 .personalInfo li {
-    font-family: var(--font-family);
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 0.5rem;
-    text-decoration: none;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  text-align: left;
 }
 
-
 .personalInfo strong {
-    color: var(--secondary-color);
-    display: inline-block;
-    width: 130px;
+  color: var(--secondary-color);
+  display: inline-block;
+  width: 130px;
 }
 
 .interestList {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: start;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: start;
 }
 
 .interestContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    background-color: var(--primary-color-light);
-    font-family: var(--font-family);
-    font-size: 1rem;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: var(--primary-color-light);
+  font-family: var(--font-family);
+  font-size: 1rem;
+  gap: 10px;
 }
 
 .interestContent:hover {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
-.interestIcon{
-    width: 30px;
-    height: 30px;
+.interestIcon {
+  width: 30px;
+  height: 30px;
+}
+
+/* responsive: tablet */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .title {
+    font-size: 2.4rem;
+    padding-bottom: 30px;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+  }
+
+  .infoSection {
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .personalInfo,
+  .interests {
+    flex: 1 1 260px;
+  }
+
+  .subtitle {
+    font-size: 1.7rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .interestContent {
+    width: 90px;
+    height: 90px;
+    font-size: 0.9rem;
+  }
+
+  .interestIcon {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+/* responsive: mobile */
+@media (max-width: 640px) {
+  .container {
+    padding: 0 0.8rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    padding-bottom: 36px;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+
+  .infoSection {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .personalInfo,
+  .interests {
+    flex: 1 1 100%;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .interestList {
+    justify-content: flex-start;
+  }
+
+  .interestContent {
+    width: 80px;
+    height: 80px;
+    font-size: 0.85rem;
+  }
+
+  .interestIcon {
+    width: 24px;
+    height: 24px;
+  }
 }
